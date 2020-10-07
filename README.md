@@ -1,5 +1,12 @@
 # Out of College Learning
-This is a repository specifically to Udemy, Books and other quiz questions (LeetCode) I have done outside my college career. Everything here will reflect current courses I am taking while doing outside projects.
+This is a repository specifically to Udemy, Books and other quiz questions (LeetCode) I have done outside my college career. Everything here will reflect current courses I am taking while doing outside of work projects.
+
+## Courses I am taking next:
+- Linux Security and Hardening. The practical security guide
+- Complete C# Unity Game Developer 3D
+- Deep Learning A-Z: Hands-On Artifical Neural Networks
+- Java Programming Masterclass for Software Developers
+- Learn Crypography Basics in Python and Java
 
 ## Udemy Machine Learning A-Z: Hands On Python & R in Data Science
 Instructor: Krill Eremenko
