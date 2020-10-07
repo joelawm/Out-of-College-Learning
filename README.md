@@ -7,6 +7,10 @@ This is a repository specifically to Udemy, Books and other quiz questions (Leet
 - Deep Learning A-Z: Hands-On Artifical Neural Networks
 - Java Programming Masterclass for Software Developers
 - Learn Crypography Basics in Python and Java
+## Books I am reading:
+- Clean Code
+- The Art of Programming
+- SQL: Thinking in sets
 
 ## Udemy Machine Learning A-Z: Hands On Python & R in Data Science
 Instructor: Krill Eremenko
