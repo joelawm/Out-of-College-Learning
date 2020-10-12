@@ -16,10 +16,8 @@ This is a repository specifically to Udemy, Books and other quiz questions (Leet
 Instructor: Krill Eremenko
 ###### Overview
 Computer Science 2
-
 ###### Languages
 Python, R
-
 ###### Assignments
 1. Assignment 1
     - c
@@ -28,10 +26,8 @@ Python, R
 Instructor: Krill Eremenko
 ###### Overview
 Computer Science 240 was a very basic introduction to C++. It just went over gnereal information on C++ such as variables, arrays, functions and statments. I already had a good understanding for the basics from coding in high school and projects in highschool. Still this was my first few C++ programs.
-
 ###### Languages
 C++
-
 ###### Assignments
 1. Assignment 1
     - it invovles stuff
@@ -40,10 +36,8 @@ C++
 Instructor: Frank Mitropoulos
 ###### Overview
 I bought this course to help refresh/harden my knowldege on C++. Most of my College degree has had some sort of C++ in the class, but I found that I wasn't perfect when it came to discussing even jsut the basics. I knew how to program in C++ and do even data structures in C++ but some of the basics I missed or I felt I didn't know it as well as I wanted. I prett much flew through this course but it was helpful in refreshing my knowledge.
-
 ###### Languages
 C++
-
 ###### Assignments
 1. Section 1: Structure of a C++ Program
     - This just goes over the preprocessor and basics of the C++ main() function and namespaces.
@@ -73,10 +67,8 @@ Instructor: Ray Viljoen
 
 ###### Languages
 Javascript, HTML, CSS
-
 ###### Framework
 Electron
-
 ###### Assignments
 1. Section 1: Structure of a C++ Program
     - This just goes over the preprocessor and basics of the C++ main() function and namespaces.
@@ -88,7 +80,6 @@ Instructor: Jonas Schmedtmann
 
 ###### Languages
 Javascript
-
 ###### Assignments
 1. Section 1: Structure of a C++ Program
     - This just goes over the preprocessor and basics of the C++ main() function and namespaces.
@@ -100,10 +91,8 @@ Instructor: Maxmilian Schwarzmuller
 
 ###### Languages
 Javascript
-
 ###### Framework
 React
-
 ###### Assignments
 1. Section 1: Structure of a C++ Program
     - This just goes over the preprocessor and basics of the C++ main() function and namespaces.
@@ -114,10 +103,36 @@ Instructor: Mark Winterbottom
 
 ###### Languages
 Python
-
 ###### Framework
 Django Rest Framework
-
 ###### Assignments
 1. Section 1: Structure of a C++ Program
     - This just goes over the preprocessor and basics of the C++ main() function and namespaces.
+
+## Udemy gRPC [Node JS] Masterclass: Build Modern API & Microservices :: IN-PROGRESS
+Instructor: Stephane Maarek
+###### Overview
+This course goes over the a new modern api microservice architecutre called gRPC. The course goes indepth into gRPC and implementing it in Node JS. Personally I love the simplicity of gRPC, and for me its more logical to implement this then a ORM with a REST API, or even just a REST API. I can easily see this become the future just becuase of its simplicity and ease of configuration.
+###### Languages
+Python
+###### Framework
+gRPC
+###### Assignments
+1. Section 1: [Theory] gRPC Internals Deep Dive
+    - This goes over the theory behind gRPC and all the different interactions at our diposal.
+2. Section 2: [Hands-On] gRPC Project Overview and Setup
+    - Section 2 setups a dummy project for us to build off of.
+3. Section 3: [Hands-On] gRPC Unary
+    - Pass
+4. Section 4: [Optional] Stastically & Dynamically Code Generation
+    - Pass
+5. Section 5: [Hands-On] gRPC Server Streaming
+    - Pass
+6. Section 6: [Hands-On] gRPC Client Streaming
+    - Pass
+7. Section 7: [Hands-On] gRPC Bi-Directional Streaming
+    - Pass
+8. Section 8: [Hands-On] gRPC Additional Features Deep Dive
+    - Pass
+9. Section 9: [Hands-On] gRPC CRUD API with Postgres
+    - Pass
