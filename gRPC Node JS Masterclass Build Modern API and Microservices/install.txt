@@ -1,5 +1,0 @@
-npm install protoc-gen-grpc -g
-npm install grpc-tools -g
-npm install google-protobuf
-npm install grpc
-npm install @grpc/proto-loader
