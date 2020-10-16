@@ -7,7 +7,7 @@ var service = require('../server/proto/greet_grpc_pb')
 */
 function greet(call, callback) {
 	var greeting = new greets.GreetResponse()
-	greeting.setResult("Hello"+ call.request.getGreeting().getFirstName())
+	greeting.setResult("Hello "+ call.request.getGreet().getFirstName())
 
 	callback(null, greeting)
 }

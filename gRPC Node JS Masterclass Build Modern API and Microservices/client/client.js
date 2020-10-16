@@ -6,7 +6,6 @@ var services = require('../server/proto/dummy_grpc_pb')
 
 function main() {
     var client = new service.GreetServiceClient('localhost:50051', grpc.credentials.createInsecure())
-
     var request = new greets.GreetRequest()
 
     // Created a protocol buffer greeting message
@@ -20,7 +19,7 @@ function main() {
     // Calling the server greet function
     client.greet(request, (error, response) => {
         if(!error) {
-            console.log("Greeting Response", response.getResult());
+            console.log("Greeting Response ", response.getResult());
         } else {
             console.error(error);
         }
