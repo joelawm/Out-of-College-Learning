@@ -277,25 +277,25 @@ React
 28. Section 28: Bonus: Building the Burger CSS
     - Pass
 
-## Udemy Build a Backend REST API with Python & Django - Beginner :: IN-PROGRESS
+## Udemy Build a Backend REST API with Python & Django - Beginner
 Instructor: Mark Winterbottom
 ###### Overview
-
+This course goes in-depth about creating your own REST API. This is very useful because its the backend of the modern web. A REST API is basically predetermined calls wether it be raw SQL or a ORM, that allows a end client to be rapidly developed. The backend architecutre also stays a little bit cleaner, but the biggest selling point for a REST API is definetely the ease of use for communication.
 ###### Languages
 Python
 ###### Framework
 Django Rest Framework
 ###### Assignments
 1. Section 1: Creating a Django app
-    - Pass
+    - Just basically commands to create the Django app.
 2. Section 2: Setup the Database
-    - Pass
+    - Starts getting into setting up the models that are going to be used later.
 3. Section 3: Setup Django Admin
-    - Pass
+    - This sections allows us to hooks up our models to the admin so we can easily add or remove data instead of utuilizing a database manager.
 4. Section 4: Introduction to API Views
-    - Pass
+    - This gets into URLs and how those connect to a given view. Those views then allow us to do whatever we need with the data.
 5. Section 5: Introduction to Viewsets
-    - Pass
+    - A viewset is similar to a view but much simpler in execution and has arguably less customization, but trade that with even greater ease of use.
 6. Section 6: Create Profiles API
     - Pass
 7. Section 7: Create login API
@@ -321,13 +321,13 @@ gRPC
 3. Section 3: [Hands-On] gRPC Unary
     - This section talks about sending single posts back and forth, instead of a stream of information.
 4. Section 4: [Optional] Stastically & Dynamically Code Generation
-    - Pass
+    - Allows us to build the source code on the fly. Not the best for speed but is good for faster developement
 5. Section 5: [Hands-On] gRPC Server Streaming
-    - Pass
+    - gRPC streaming revolves around the idea of a server sending bigger or alot of data to the client, while the client still sends smaller packets.
 6. Section 6: [Hands-On] gRPC Client Streaming
-    - Pass
+    - gRPC Client streaming is similar to Server streaming but the user is send a lot of data to a server. Ths would be best utilized in a scenario were you have a bunch of nodes on a network that need to communicate with a single server, and there server is just taking in the data, and maybe send smaller instrcutions to each node.
 7. Section 7: [Hands-On] gRPC Bi-Directional Streaming
-    - Pass
+    - This section gets into bi-directional and this is best for game servers or any application where both the node and server are trading off tons of data. Maybe machine leraning datasets, and data being streamed to the node to be processed and sent back or even cloud applications, where a user might upload or download a file.
 8. Section 8: [Hands-On] gRPC Additional Features Deep Dive
     - Pass
 9. Section 9: [Hands-On] gRPC CRUD API with Postgres
