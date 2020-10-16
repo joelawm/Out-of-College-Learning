@@ -1,5 +1,5 @@
 {
-  "name": "grpc-test",
+  "name": "proto",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,6 +11,7 @@
   "dependencies": {
     "google-protobuf": "^3.13.0",
     "grpc": "^1.24.3",
-    "grpc-tools": "^1.9.1"
+    "grpc-tools": "^1.9.1",
+    "nodemon": "^2.0.5"
   }
 }
