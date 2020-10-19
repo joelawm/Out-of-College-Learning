@@ -1,40 +1,28 @@
-const path = require('path')
-const protoLoader = require('@grpc/proto-loader')
-const grpc = require('grpc');
-const { request } = require('http');
+var grpc = require('grpc')
+var greets = require('../server/proto/greet_pb')
+var service = require('../server/proto/greet_grpc_pb')
 
-// grpc service defintion for greet
-
-const greetProtoPath = path.join(__dirname, "..", "proto", "greet.proto")
-const greetProtoDefintion = protoLoader.loadSync(greetProtoPath, {
-	keepCase: true,
-	longs: String,
-	enums: String,
-	defaults: true,
-	oneofs: true
-});
-
-const GreetPackageDefinition = grpc.loadPackageDefinition(greetProtoDefintion).greet;
-
-const client = new GreetPackageDefinition.GreetService('localhost:50051', grpc.credentials.createInsecure())
-
-function callGreetings() {
-	var request = {
-		greeting: {
-			first_name: "Jerry",
-			last_name: "Tom"
-		}
-	}
-	client.greet(request, (error, response) => {
-		if(!error){
-			console.log("Greeting Response ", response.result);
-		} else {
-			console.log(error);
-		}
-	});
-}
+var services = require('../server/proto/dummy_grpc_pb')
 
 function main() {
-	callGreetings()
+    var client = new service.GreetServiceClient('localhost:50051', grpc.credentials.createInsecure())
+    var request = new greets.GreetRequest()
+
+    // Created a protocol buffer greeting message
+    var greeting = new greets.Greeting()
+    greeting.setFirstName("Jerry")
+    greeting.setLastName("Tom")
+
+    // Set the greeting
+    request.setGreet(greeting)
+
+    // Calling the server greet function
+    client.greet(request, (error, response) => {
+        if(!error) {
+            console.log("Greeting Response ", response.getResult());
+        } else {
+            console.error(error);
+        }
+    })
 }
 main()

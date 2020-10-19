@@ -1,37 +1,30 @@
-const path = require('path')
-const protoLoader = require('@grpc/proto-loader')
-const grpc = require('grpc');
-const { request } = require('http');
+var grpc = require('grpc')
+var greets = require('../server/proto/greet_pb')
+var service = require('../server/proto/greet_grpc_pb')
 
-// grpc service defintion for greet
+/*
+   Implment the Greet RPC Function 
+*/
 
-const greetProtoPath = path.join(__dirname, "..", "proto", "greet.proto")
-const greetProtoDefintion = protoLoader.loadSync(greetProtoPath, {
-	keepCase: true,
-	longs: String,
-	enums: String,
-	defaults: true,
-	oneofs: true
-});
-
-const GreetPackageDefinition = grpc.loadPackageDefinition(greetProtoDefintion).greet;
+function greetMany() {
+	
+}
 
 function greet(call, callback) {
-	var firtName = call.request.greeting.first_name;
-	var lastName = call.request.greeting.last_name;
+	var greeting = new greets.GreetResponse()
+	greeting.setResult("Hello "+ call.request.getGreet().getFirstName())
 
-	callback(null, {result: "Hello " + firtName + " "  + lastName})
+	callback(null, greeting)
 }
 
-function main() {
-	const server = new grpc.Server()
-
-	server.addService(GreetPackageDefinition.GreetService.service, {
-		greet: greet
-	})
-
-	server.bind('127.0.0.1:50051', grpc.ServerCredentials.createInsecure())
+function main(){
+	var server = new grpc.Server()
+	
+	server.addService(service.GreetServiceService, {greet: greet})
+	server.bind("127.0.0.1:50051", grpc.ServerCredentials.createInsecure())
 	server.start()
-	console.log("Server Running at 127.0.0.1:50051");
+
+	console.log("Server runnning on ip 127.0.0.1:50051");
 }
 main()
+
