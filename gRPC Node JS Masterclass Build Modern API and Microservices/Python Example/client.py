@@ -1,5 +1,6 @@
 """
-Client isn't neccesaryy to the overall program, its just to connect and send data to the server.
+Client isn't neccesary to the overall program, its just to connect and send data to the server.
+I will be working on the same thing but in JS for fun.
 
 """
 import grpc

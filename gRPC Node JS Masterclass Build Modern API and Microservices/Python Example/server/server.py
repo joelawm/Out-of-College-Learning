@@ -26,6 +26,7 @@ class CalculatorServicer(calc_pb2_grpc.CalculatorServicer):
         return response
 
 def server_launch():
+    """ This just launches the server and establishes the services that are needed """
     # create a gRPC server
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
 
