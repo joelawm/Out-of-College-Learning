@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message Number {
+    float value = 1;
+}
+
+// Calculator service which includes several optiosn for communciation
+service Calculator {
+    rpc SquareRoot(Number) returns (Number) {}
+    rpc Addition(Number) returns (Number) {}
+}
