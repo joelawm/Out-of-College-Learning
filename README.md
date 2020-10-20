@@ -310,7 +310,7 @@ Instructor: Stephane Maarek
 ###### Overview
 This course goes over the a new modern api microservice architecutre called gRPC. The course goes indepth into gRPC and implementing it in Node JS. Personally I love the simplicity of gRPC, and for me its more logical to implement this then a ORM with a REST API, or even just a REST API. I can easily see this become the future just becuase of its simplicity and ease of configuration.
 ###### Languages
-Python
+Javascript, Python
 ###### Framework
 gRPC
 ###### Assignments
