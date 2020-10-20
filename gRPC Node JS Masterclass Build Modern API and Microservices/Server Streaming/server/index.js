@@ -23,17 +23,10 @@ function greetManyTimes(call, callback) {
 	}, 1000)
 }
 
-function greet(call, callback) {
-	var greeting = new greets.GreetResponse()
-	greeting.setResult("Hello "+ call.request.getGreeting().getFirstName())
-
-	callback(null, greeting)
-}
-
 function main() {
 	var server = new grpc.Server()
 	
-	server.addService(service.GreetServiceService, {greet: greet, greetManyTimes: greetManyTimes})
+	server.addService(service.GreetServiceService, {greetManyTimes: greetManyTimes})
 	server.bind("127.0.0.1:50051", grpc.ServerCredentials.createInsecure())
 	server.start()
 
