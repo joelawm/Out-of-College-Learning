@@ -5,10 +5,15 @@ var service = require('../server/proto/greet_grpc_pb')
 /*
    Implment the Greet RPC Function 
 */
+async function sleep(interval) {
+	return new Promise((resolve) => {
+		setTimeout(() => resolve(), interval)
+	})
+}
 
-function longGreet(call, callback) {
-	call.on('data', request => {
-		var fullName = request.getGreet().getFirstName() + ' ' + request.getGreet().getLastName()
+async function greetEveryone(call, callback) {
+	call.on('data', response => {
+		var fullName = response.getGreet().getFirstName() + ' ' + response.getGreet().getLastName()
 		console.log('Hello ' + fullName);
 	})
 
@@ -17,17 +22,23 @@ function longGreet(call, callback) {
 	})
 
 	call.on('end', () =>{
-		var response = new greets.LongGreetResponse()
-		response.setResult("Long Greet Client Streaming.....")
-
-		callback(null, response)
+		console.log('The end...');
 	})
+
+	for(var i = 0; i < 10; i++) {
+		var request = new greets.GreetEveryoneResponse()
+		request.setResult("Pabulo Dichone")
+
+		call.write(request)
+		await sleep(1000)
+	}
+	call.end()
 }
 
 function main() {
 	var server = new grpc.Server()
 	
-	server.addService(service.GreetServiceService, {longGreet, longGreet})
+	server.addService(service.GreetServiceService, {greetEveryone, greetEveryone})
 	server.bind("127.0.0.1:50051", grpc.ServerCredentials.createInsecure())
 	server.start()
 
