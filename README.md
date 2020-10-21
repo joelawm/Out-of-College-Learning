@@ -7,6 +7,7 @@ This is a repository specifically to Udemy, Books and other quiz questions (Leet
 - Deep Learning A-Z: Hands-On Artifical Neural Networks
 - Java Programming Masterclass for Software Developers
 - Learn Crypography Basics in Python and Java
+- Learn Hibernate and Spring for Beguinners (includes Spring Boot)
 ## Books I am reading:
 - Clean Code
 - The Art of Programming
@@ -20,11 +21,11 @@ Computer Science 2
 Python, R
 ###### Assignments
 1. Section 1: Data Preprocessing in Python
-    - Pass
+    - This section just highlights the verious steps to clean data and prepare it in a dataframe to be used in a model.
 2. Section 2: Data Preprocessing in R
-    - Pass
+    - Same as the first section except done in R.
 3. Section 3: Simple Linear Regression
-    - Pass
+    - This section goes into one of the simpler forms of machine learning utilizng Linear Regression.
 4. Section 4: Multiple Linear Regression
     - Pass
 5. Section 5: Polynomial Regression
@@ -305,7 +306,7 @@ Django Rest Framework
 9. Section 9: Deploying our API to a server on AWS
     - Pass
 
-## Udemy gRPC [Node JS] Masterclass: Build Modern API & Microservices :: IN-PROGRESS
+## Udemy gRPC [Node JS] Masterclass: Build Modern API & Microservices
 Instructor: Stephane Maarek
 ###### Overview
 This course goes over the a new modern api microservice architecutre called gRPC. The course goes indepth into gRPC and implementing it in Node JS. Personally I love the simplicity of gRPC, and for me its more logical to implement this then a ORM with a REST API, or even just a REST API. I can easily see this become the future just becuase of its simplicity and ease of configuration.
@@ -321,7 +322,7 @@ gRPC
 3. Section 3: [Hands-On] gRPC Unary
     - This section talks about sending single posts back and forth, instead of a stream of information.
 4. Section 4: [Optional] Stastically & Dynamically Code Generation
-    - Allows us to build the source code on the fly. Not the best for speed but is good for faster developement
+    - Allows us to build the source code on the fly. Not the best for speed but is good for faster developement.
 5. Section 5: [Hands-On] gRPC Server Streaming
     - gRPC streaming revolves around the idea of a server sending bigger or alot of data to the client, while the client still sends smaller packets.
 6. Section 6: [Hands-On] gRPC Client Streaming
