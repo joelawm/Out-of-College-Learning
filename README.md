@@ -336,6 +336,15 @@ gRPC
     - This section goes in depth on the topics of deadlines, errors and SSL encryption. 
 9. Section 9: [Hands-On] gRPC CRUD API with Postgres
     - Pass
+###### Homework
+1. Assignment 1: Unary Sum API
+    - Pass
+2. Assignment 2: Server Streaming Prime Number Decompisition API
+    - Pass
+2. Assignment 2: Client Streaming Compute Average
+    - Pass
+2. Assignment 2: Bi Directional Streaming Find Maximum
+    - Pass
 
 ## Udemy Java Programming Masterclass for Software Developers
 Instructor: Tim Buchalka
