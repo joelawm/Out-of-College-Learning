@@ -19,7 +19,7 @@ Instructor: Krill Eremenko
 Computer Science 2
 ###### Languages
 Python, R
-###### Assignments
+###### Section
 1. Section 1: Data Preprocessing in Python
     - This section just highlights the verious steps to clean data and prepare it in a dataframe to be used in a model.
 2. Section 2: Data Preprocessing in R
@@ -97,7 +97,7 @@ Instructor: Krill Eremenko
 Computer Science 240 was a very basic introduction to C++. It just went over gnereal information on C++ such as variables, arrays, functions and statments. I already had a good understanding for the basics from coding in high school and projects in highschool. Still this was my first few C++ programs.
 ###### Languages
 C++
-###### Assignments
+###### Section
 1. Section 1: Hit The Ground Running
     - Pass
 2. Section 2: Core Programming Principles
@@ -121,7 +121,7 @@ Instructor: Frank Mitropoulos
 I bought this course to help refresh/harden my knowldege on C++. Most of my College degree has had some sort of C++ in the class, but I found that I wasn't perfect when it came to discussing even jsut the basics. I knew how to program in C++ and do even data structures in C++ but some of the basics I missed or I felt I didn't know it as well as I wanted. I prett much flew through this course but it was helpful in refreshing my knowledge.
 ###### Languages
 C++
-###### Assignments
+###### Section
 1. Section 1: Structure of a C++ Program
     - This just goes over the preprocessor and basics of the C++ main() function and namespaces.
 2. Section 2: Variables and Constants
@@ -163,7 +163,7 @@ Instructor: Ray Viljoen
 Javascript, HTML, CSS
 ###### Framework
 Electron
-###### Assignments
+###### Section
 1. Section 1: Developing with Electron
     - Pass
 2. Section 2: Main Process API
@@ -192,7 +192,7 @@ Instructor: Jonas Schmedtmann
 
 ###### Languages
 Javascript
-###### Assignments
+###### Section
 1. Section 1: JavaScript Language Basics
     - Pass
 2. Section 2: How JavaScript Works Behind the Scenes
@@ -220,7 +220,7 @@ Instructor: Maxmilian Schwarzmuller
 Javascript
 ###### Framework
 React
-###### Assignments
+###### Section
 1. Section 1: Refreshing Next Generation JavaScript (Optional)
     - Pass
 2. Section 2: Understanding the Base Features & Syntax
@@ -286,7 +286,7 @@ This course goes in-depth about creating your own REST API. This is very useful 
 Python
 ###### Framework
 Django Rest Framework
-###### Assignments
+###### Section
 1. Section 1: Creating a Django app
     - Just basically commands to create the Django app.
 2. Section 2: Setup the Database
@@ -314,7 +314,7 @@ This course goes over the a new modern api microservice architecutre called gRPC
 Javascript, Python
 ###### Framework
 gRPC
-###### Assignments
+###### Section
 1. Section 1: [Theory] gRPC Internals Deep Dive
     - This goes over the theory behind gRPC and all the different interactions at our diposal.
 2. Section 2: [Hands-On] gRPC Project Overview and Setup
@@ -332,4 +332,58 @@ gRPC
 8. Section 8: [Hands-On] gRPC Additional Features Deep Dive
     - Pass
 9. Section 9: [Hands-On] gRPC CRUD API with Postgres
+    - Pass
+
+## Udemy Java Programming Masterclass for Software Developers
+Instructor: Tim Buchalka
+###### Overview
+This course goes over Java and learning the ins and outs of the language.
+###### Languages
+Java
+###### Section
+1. Section 1: First Steps
+    - First Steps was simple, it was really just basic things like a hello world program and variables with types.
+2. Section 2: Java Tutorial: Expressions, Statements, Code blocks, Methods and more
+    - Pass
+3. Section 3: Control Flow Statements
+    - Pass
+4. Section 4: OOP Part 1 - Classes, Constructors and Inheritance
+    - Pass
+5. Section 5: OOP Part 2 - Composition, Encapsulation, and Polymorphism
+    - Pass
+6. Section 6: Arrays, Java inbuilt Lists, Autoboxing and Unboxing
+    - Pass
+7. Section 7: Inner and Abstract Classes & Interfaces
+    - Pass
+8. Section 8: Java Generics
+    - Pass
+9. Section 9: Naming Conventions and Packages. static and final keywords
+    - Pass
+10. Section 10: Java Collections
+    - Pass
+11. Section 11: JavaFX
+    - Pass
+12. Section 12: Basic Input & Output including java.util
+    - Pass
+13. Section 13: Concurrency in Java
+    - Pass
+14. Section 14: Lambda Expressions
+    - Pass
+15. Section 15: Regular Expressions
+    - Pass
+16. Section 16: Debugging and Unit Testing
+    - Pass
+17. Section 17: Databases
+    - Pass
+18. Section 18: Java Networking Programming
+    - Pass
+19. Section 19: Java 9 Module System
+    - Pass
+20. Section 20: Migrating Java Projects to Java 9
+    - Pass
+21. Section 21: Course Remaster in Progress
+    - Pass
+22. Section 22: Archived Videos
+    - Pass
+23. Section 23: Extra Information - Source code, and other stuff
     - Pass
