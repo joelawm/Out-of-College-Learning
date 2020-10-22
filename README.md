@@ -1,6 +1,9 @@
 # Out of College Learning
 This is a repository specifically to Udemy, Books and other quiz questions (LeetCode) I have done outside my college career. Everything here will reflect current courses I am taking while doing outside of work projects.
 
+### What does Pass mean?
+Generally pass means I have not gotten to that section yet. I usually update as I go, but sometimes ill do a few sections and then update it the next morning. Also some courses sections are much longer. So sections from one course might be 2 hours a section, while others are 30 minutes.
+
 ## Courses I am taking next:
 - Linux Security and Hardening. The practical security guide
 - Complete C# Unity Game Developer 3D
