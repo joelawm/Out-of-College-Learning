@@ -1,0 +1,10 @@
+Code regen:
+npx grpc_tools_node_protoc ./proto/dummy.proto --js_out=import_style=commonjs,binary:./server --grpc_out=./server
+
+Server start:
+cd server
+npx nodemon index.js
+
+Client start:
+cd client
+node client.js
