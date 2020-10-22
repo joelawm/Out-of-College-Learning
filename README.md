@@ -330,7 +330,7 @@ gRPC
 7. Section 7: [Hands-On] gRPC Bi-Directional Streaming
     - This section gets into bi-directional and this is best for game servers or any application where both the node and server are trading off tons of data. Maybe machine leraning datasets, and data being streamed to the node to be processed and sent back or even cloud applications, where a user might upload or download a file.
 8. Section 8: [Hands-On] gRPC Additional Features Deep Dive
-    - Pass
+    - This section goes in depth on the topics of deadlines, errors and SSL encryption. 
 9. Section 9: [Hands-On] gRPC CRUD API with Postgres
     - Pass
 
