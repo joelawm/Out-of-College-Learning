@@ -338,7 +338,7 @@ gRPC
     - Pass
 ###### Homework
 1. Assignment 1: Unary Sum API
-    - Pass
+    - This was just a simple api where I add 2 numbers together that are passed to the server.
 2. Assignment 2: Server Streaming Prime Number Decompisition API
     - Pass
 2. Assignment 2: Client Streaming Compute Average
