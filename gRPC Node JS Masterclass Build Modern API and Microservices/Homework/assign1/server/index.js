@@ -5,24 +5,22 @@ var service = require('../server/proto/calculator_grpc_pb')
 /*
    Implment the Calculator RPC Function 
 */
-function squareRoot(call, callback) {
-	var number = call.request.getNumber()
+function sum(call, callback) {
+	// This grabs the sum the the client sends over
+	var number1 = call.request.getFirstnumber()
+	var number2 = call.request.getSecondnumber()
 
-	if(number >= 0) {
-		var numberRoot = Math.sqrt(number)
-		var response = new calculator.SquareRootResponse()
-		response.setNumberRoot(numberRoot)
+	var sumTotal = number1 + number2
+	var response = new calculator.SumResponse()
+	response.setSumResult(sumTotal)
 
-		callback(null, response)
-	} else {
-		return callback({code: grpc.status.INVALID_ARGUMENT, message: 'The Number being sent is not positive. Number Sent: ' + number})
-	}
+	callback(null, response)
 }
 
 function main(){
 	var server = new grpc.Server()
 	
-	server.addService(service.CalculatorServiceService, {squareRoot: squareRoot})
+	server.addService(service.CalculatorServiceService, {sum: sum})
 	server.bind("127.0.0.1:50051", grpc.ServerCredentials.createInsecure())
 	server.start()
 

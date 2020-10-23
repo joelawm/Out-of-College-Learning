@@ -4,13 +4,14 @@ package calculator;
 
 service CalculatorService {
 	// unary API
-	rpc SquareRoot (SquareRootRequest) returns (SquareRootResponse) {};
+	rpc Sum (SumRequest) returns (SumResponse) {};
 }
 
-message SquareRootRequest {
-	int32 number = 1;
+message SumRequest {
+	int32 firstnumber = 1;
+	int32 secondnumber = 2;
 }
 
-message SquareRootResponse {
-	double number_root = 1;
+message SumResponse {
+	int32 sum_result = 1;
 }
