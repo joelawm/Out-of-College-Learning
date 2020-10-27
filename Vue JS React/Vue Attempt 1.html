@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<body>
+
+<div id="app">
+  <h1>{{ message }}</h1>
+  <p>Quickly Up date here or
+	<button onclick="myFunction()">Click Me!</button>
+  </p>
+  <p>Update me by typing</p>
+  <p><input v-model="message"></p>
+</div>
+
+<div id="app2">
+  <p>Loopig through data and displaying it</p>
+  <ul>
+    <li v-for="x in todos">
+      {{ x.text }}
+    </li>
+    </ul>
+</div>
+
+<script>
+  var myObject = new Vue({el: '#app', data: {message: 'Hello Vue!'}})
+  function myFunction() {
+    myObject.message = "John Doe";
+  }
+  myObject = new Vue({
+  el: '#app2',
+  data: {
+    todos: [
+      { text: 'Learn JavaScript' },
+      { text: 'Learn Vue.js' },
+      { text: 'Build Something Awesome' }
+      ]
+    }
+  })
+</script>
+
+</body>
+</html>
