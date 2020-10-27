@@ -10,7 +10,12 @@ namespace Layout_ex
         {
             InitializeComponent();
 
-            MainPage = new StackPage();
+            // Uncomment these to see each section
+
+            //MainPage = new StackPage();
+            MainPage = new GridPage();
+            //MainPage = new AbsolutePage();
+            //MainPage = new RelativePage();
         }
 
         protected override void OnStart()
