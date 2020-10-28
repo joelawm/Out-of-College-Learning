@@ -13,9 +13,9 @@ namespace Layout_ex
             // Uncomment these to see each section
 
             //MainPage = new StackPage();
-            MainPage = new GridPage();
+            //MainPage = new GridPage();
             //MainPage = new AbsolutePage();
-            //MainPage = new RelativePage();
+            MainPage = new RelativePage();
         }
 
         protected override void OnStart()

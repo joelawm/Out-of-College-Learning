@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImagesExample.ImagePage">
+    <AbsoluteLayout BackgroundColor="Black">
+        <ActivityIndicator IsRunning="{Binding Source={x:Reference image}, Path=IsLoading}"
+                           Color="White"
+                           AbsoluteLayout.LayoutBounds="0.5, 0.5, 100, 100"
+                           AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <Image Source="https://www.pixelstalk.net/wp-content/uploads/2016/07/Desktop-HD-Pictures-1920x1080.jpg" x:Name="image" 
+               Aspect="AspectFill" 
+               AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All"/>
+    </AbsoluteLayout>
+</ContentPage>
