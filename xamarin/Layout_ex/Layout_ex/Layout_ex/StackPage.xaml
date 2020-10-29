@@ -3,11 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Layout_ex.StackPage"
              Padding="0, 20, 0, 0">
-    <ContentPage.Content>
+    <StackLayout Orientation="Horizontal"
+                 Padding="40"
+                 Spacing="20"
+                 VerticalOptions="Center"
+                 HorizontalOptions="Center">
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Image Source="https://place-hold.it/100x100" />
+            <Label Text="Label 1" />
         </StackLayout>
-    </ContentPage.Content>
+        <Label Text="Label 2" />
+        <Label Text="Label 3" />
+    </StackLayout>
 </ContentPage>
