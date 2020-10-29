@@ -4,7 +4,7 @@ import time
 passwd = b'password123!'
 
 start = time.time()
-salt = bcrypt.gensalt(rounds=13)
+salt = bcrypt.gensalt(rounds=12)
 hashed = bcrypt.hashpw(passwd, salt)
 end = time.time()
 
