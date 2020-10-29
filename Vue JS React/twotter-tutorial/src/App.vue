@@ -1,6 +1,8 @@
 <template>
   <div id='app'>
-    @{{ user.username }} - {{fullname}}
+    @{{ user.username }} - {{ fullname }}
+    <strong>Followers: </strong> {{ followers }}
+    <button @click="followUser" type="button">Follow</button>
   </div>
 </template>
 
@@ -18,11 +20,16 @@ export default {
         email: 'jmeyer@m.com',
         isAdmin: true
       }
-    }
+    };
   },
   computed: {
     fullname () {
       return `${this.user.firstname} ${this.user.lastname}`;
+    }
+  },
+  methods: {
+    followUser: function() {
+      this.followers = this.followers + 1;
     }
   }
 }
@@ -35,6 +42,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
 }
 </style>
