@@ -2,9 +2,14 @@
   <div class='user-profile'>
     <div class="user-profile__user-panel">
       <h1 class="user-profile__username">@{{ user.username }}</h1>
-      <div class="user-profile__admin-badge">Admin</div> 
+      <div class="user-profile__admin-badge" v-if="user.isAdmin">Admin</div> 
       <div class="user-profile__follower">
         <strong>Followers: </strong> {{ followers }}
+      </div>
+    </div>
+    <div class="user-profile__twoots-wrapper">
+      <div class="user-profile__twoot" v-for="twoot in user.twoots" :key="twoot.id">
+        {{twoot.content}} 
       </div>
     </div>
   </div>
@@ -22,9 +27,13 @@ export default {
         firstname: 'Joe',
         lastname: 'Meyer',
         email: 'jmeyer@m.com',
-        isAdmin: true
+        isAdmin: true,
+        twoots: [
+          { id: 1, content: 'Twotter is amazing!' },
+          { id: 2, content: "Don't forget to subscirne to the earth is square" } 
+        ]
       }
-    };
+    }
   },
   watch: {
     followers(newFollowerCount, oldFollowerCount) {
