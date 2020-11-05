@@ -8,16 +8,17 @@
       </div>
     </div>
     <div class="user-profile__twoots-wrapper">
-      <div class="user-profile__twoot" v-for="twoot in user.twoots" :key="twoot.id">
-        {{twoot.content}} 
-      </div>
+      <TwootItem v-for="twoot in user.twoots" :key="twoot.id" :username="user.username" :twoot="twoot"/>
     </div>
   </div>
 </template>
 
 <script>
+import TwootItem from "./TwootItem";
+
 export default {
   name: 'UserProfile',
+  components: { TwootItem },
   data() {
     return {
       followers: 0,
