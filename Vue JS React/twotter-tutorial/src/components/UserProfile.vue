@@ -31,7 +31,7 @@ export default {
         isAdmin: true,
         twoots: [
           { id: 1, content: 'Twotter is amazing!' },
-          { id: 2, content: "Don't forget to subscirne to the earth is square" } 
+          { id: 2, content: "Don't forget to subscribe to the earth is square" } 
         ]
       }
     }

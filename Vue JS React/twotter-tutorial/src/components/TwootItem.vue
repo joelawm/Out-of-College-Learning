@@ -2,7 +2,7 @@
   <div class='twoot-item'>
     <div class="user-profile__twoot">
       <div class="user-profile__user">@{{ username }}</div>
-      <div class="twoot-item__content"> {{ twoot }}</div>
+      <div class="twoot-item__content"> {{ twoot.content }}</div>
     </div>
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
       type: String,
       required: true
     },
-    twoots: {
+    twoot: {
       type: Object,
       required: true
     }
@@ -38,7 +38,7 @@ export default {
   transform: scale(1.1, 1.1);
 }
 
-.twoot-item__user {
+.user-profile__user {
   font-weight: bold;
 }
 </style>
